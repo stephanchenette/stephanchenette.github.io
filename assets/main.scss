@@ -5,20 +5,27 @@ $background-color: #ffffff;
 $text-color: #000000;
 $link-base-color: #0000ee;
 $link-hover-color: #0000ee;
+$brand-color: #000000;
 
 @import "minima";
 
 body {
   font-family: "Times New Roman", Times, serif;
-  font-size: 18px;
-  line-height: 1.7;
+  font-size: 19px;
+  line-height: 1.75;
   max-width: 680px;
-  margin: 60px auto;
+  margin: 70px auto;
   padding: 0 24px;
 }
 
 .site-header {
   border-bottom: none;
+  margin-bottom: 40px;
+}
+
+.site-title {
+  font-weight: normal;
+  font-size: 24px;
 }
 
 .site-footer {
@@ -27,4 +34,5 @@ body {
 
 .post-meta {
   color: #666;
+  font-size: 14px;
 }
