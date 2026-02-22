@@ -5,7 +5,6 @@ title: Stephan Chenette
 
 Founder. Builder. Systems thinker.
 
-I write about:
-- Multi-agent AI systems
-- Startup life
-- Technical architecture
+- Essays
+
+- [Why Multi-Agent Systems Change Control](/why-multi-agent-systems-change-control/)
