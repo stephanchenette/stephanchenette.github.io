@@ -1,23 +1,24 @@
 ---
 ---
 
-$background-color: #0f0f0f;
-$text-color: #e6e6e6;
-$link-base-color: #7dd3fc;
-$link-hover-color: #38bdf8;
-$brand-color: #7dd3fc;
-$grey-color: #aaaaaa;
+$background-color: #ffffff;
+$text-color: #000000;
+$link-base-color: #0000ee;
+$link-hover-color: #0000ee;
 
 @import "minima";
 
-/* Optional refinement */
 body {
-  font-family: Georgia, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 18px;
   line-height: 1.7;
-  max-width: 720px;
+  max-width: 680px;
   margin: 60px auto;
   padding: 0 24px;
+}
+
+.site-header {
+  border-bottom: none;
 }
 
 .site-footer {
@@ -25,5 +26,5 @@ body {
 }
 
 .post-meta {
-  display: none;
+  color: #666;
 }
