@@ -1,0 +1,23 @@
+---
+layout: null
+---
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>{{ site.title }}</title>
+    <link>{{ site.url }}</link>
+    <description>{{ site.description }}</description>
+
+    {% for page in site.pages %}
+      {% if page.essay %}
+        <item>
+          <title>{{ page.title }}</title>
+          <link>{{ site.url }}{{ page.url }}</link>
+          <description>{{ page.content | strip_html | truncate: 300 }}</description>
+        </item>
+      {% endif %}
+    {% endfor %}
+
+  </channel>
+</rss>
