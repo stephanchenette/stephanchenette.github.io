@@ -7,6 +7,5 @@ Founder. Builder. Systems thinker.
 
 I write about:
 - Multi-agent AI systems
-- Startup control & equity
-- Venture studio models
+- Startup life
 - Technical architecture
