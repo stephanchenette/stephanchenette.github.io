@@ -1,0 +1,53 @@
+---
+---
+
+@import "minima";
+
+body {
+  background: #0f0f0f;
+  color: #eaeaea;
+  font-family: Georgia, serif;
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 720px;
+  margin: 60px auto;
+  padding: 0 24px;
+}
+
+a {
+  color: #7dd3fc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.site-header {
+  border-bottom: none;
+  margin-bottom: 40px;
+}
+
+.site-title {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.site-footer {
+  display: none;
+}
+
+.post-meta {
+  display: none;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #333;
+  margin: 40px 0;
+}
+
+h1, h2, h3 {
+  font-weight: 500;
+  margin-top: 40px;
+}
