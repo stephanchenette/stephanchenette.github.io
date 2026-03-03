@@ -9,65 +9,119 @@ essay: true
 
 *March 2026*
 
-For the last several years I've been obsessively organizing my notes. Obsidian vaults, Notion databases, tagging systems, folder hierarchies, daily templates. I spent more time than I'd like to admit getting the structure right. And it was right. For me.
+For the last few years, I've been obsessively reorganizing my notes.
 
-The problem is that I now have a second reader.
+I moved from scattered Apple Notes to Notion to Obsidian. I studied other people's systems. I built dashboards, templates, hierarchies. I tuned it until it felt right.
 
-I run a constellation of AI agents that help me manage my life and work. They check my calendar, process my meeting notes, surface tasks I've forgotten, draft messages in my voice. They're good at this. But every time one of them tries to read my carefully organized Obsidian vault, I watch it struggle with the same thing: my notes were never written for it.
+And it was right.
 
-This isn't a minor inconvenience. It's a fundamental design problem that almost nobody is talking about clearly. We've spent a decade building personal knowledge systems optimized for one audience, ourselves, and now we have a second audience that reads completely differently, and we're trying to serve both with the same files.
+For me.
 
+Then I got a second reader.
 
-Here's what I mean. When I write a meeting note, I use shorthand. I reference people by first name. I use → arrows for action items. I bold things that matter to me visually. I nest toggles. I have a color system. All of this makes the note instantly scannable when I open it a week later. I can glance at it and reconstruct the entire meeting in seconds.
+I now run a constellation of AI agents that help manage my life and work. They read my meeting notes, extract action items, enrich context, draft messages. They're useful.
 
-An LLM cannot glance. It doesn't benefit from bold text or color or spatial layout. What it needs is something much more boring: clear, unambiguous text with explicit metadata. It needs to know that "Sarah" is Sarah Chen from the product team, not Sarah my neighbor. It needs the action items tagged in a way it can parse, not styled in a way that catches my eye. It needs dates in ISO format, not "next Tuesday."
+But every time they search my vault, they struggle.
 
-These are two fundamentally different consumption patterns, and we've been pretending they're the same.
+Not because they're dumb.
 
+Because my notes weren't written for them.
 
-The realization hit me when I added a file watcher to my Obsidian vault. Every time a meeting note gets saved, an AI agent picks it up, reads it, extracts action items, and adds tasks to my daily note. Simple enough. But I kept finding it was misclassifying things, missing context, and creating duplicate tasks. Not because the AI was dumb, but because my notes were optimized for a human who already had the context. The AI had to guess, and it guessed wrong often enough to be annoying.
+For a decade, we've built personal knowledge systems optimized for one audience: ourselves. Now we have a second audience that reads very differently. And we're trying to serve both with the same files.
 
-So I started adding frontmatter. YAML headers with structured fields: meeting type, attendees as wiki links, company names, tags. Ugly to look at, but suddenly my agents could reliably tell the difference between a customer call and an internal standup without reading the whole note and inferring.
+Humans glance. Machines parse.
 
-And here's the thing that surprised me: the frontmatter made the notes better for me too. Not because I read YAML for fun, but because the discipline of filling in those fields forced me to be precise about what just happened. Who was actually there? What company? What type of meeting was this really? I started making fewer sloppy notes.
+When I write notes, I use shorthand.
+"John → follow up."
+Bold text. Color. Spatial layout.
 
+A week later I can glance at the page and reconstruct the meeting. My brain fills in the gaps.
 
-This echoes something Nate Lee said in a recent video about building "agent-readable" knowledge systems. He made the observation that the internet is forking. There's the human web with fonts and layouts, and the emerging agent web with APIs and structured data. And he argues that your personal notes are forking in exactly the same way.
+An LLM can't fill in gaps. It needs explicit structure.
 
-He's right about the fork. But I think he undersells the harder problem, which is that most of us don't want two separate systems. We don't want a pretty Obsidian vault for ourselves and a Postgres database for our agents. We want one set of notes that serves both audiences. The question is whether that's possible without making the notes worse for either one.
+It needs to know which John.
+It needs dates in a standard format.
+It needs action items in a consistent pattern.
 
-I think it is, but it requires a shift in how we think about writing for ourselves.
+The difference isn't cosmetic. It's architectural.
 
+This became obvious when I added a file watcher. Every time I saved a meeting note, an agent would read it and add tasks to my daily page.
 
-The shift is this: treat your notes like an API with a nice frontend.
+In theory, elegant.
 
-The underlying data should be structured, explicit, and machine-parseable. The surface presentation can be whatever makes you productive. Your colors, your shorthand, your spatial layout. But the structure underneath has to be legible to something that doesn't have your context.
+In practice, messy.
 
-In practice this means a few things. It means frontmatter matters. It means naming conventions matter. It means when you reference a person, you use a consistent format your agents can resolve. It means your folder structure should encode information, not just organize visually. It means your templates should generate both the human-friendly layout and the machine-friendly metadata in one action.
+It misclassified things. It duplicated tasks. It guessed wrong.
 
-None of this is technically hard. What's hard is the habit change. For years, the only question I asked when organizing my notes was "can I find this later?" Now the question is "can I find this later, and can a machine find it too, and can it understand what it found?"
+The AI wasn't failing.
 
+My notes were.
 
-There's a deeper point here that I keep coming back to. Toby Lütke, the Shopify CEO, said something provocative recently. He thinks a lot of corporate politics amounts to "bad human context engineering." People are unclear about what they mean, what they want, and what they decided, and the ambiguity creates space for dysfunction.
+They assumed context. The agent had none.
 
-I think there's a personal version of this. A lot of the friction in our personal knowledge systems is just bad personal context engineering. The notes we can never find. The tasks that fall through the cracks. The decisions we remake because we forgot we already made them. We write things in a way that feels sufficient in the moment but is actually ambiguous. We rely on our own memory to fill in the gaps.
+So I added frontmatter. Structured metadata: meeting type, attendees, company, initiative. Ugly, but precise.
 
-AI agents can't fill in those gaps. They take what you wrote literally. And the beautiful irony is that writing clearly enough for an AI to understand forces you to write clearly enough that your future self will understand too. Your future self is a lot more like an AI than you think. Limited context. No memory of the emotional state you were in. Just the text on the page.
+The agents became dramatically more reliable.
 
-Optimizing for machines turns out to be optimizing for your own forgetfulness.
+Something else happened too. My notes improved.
 
+Filling out structured fields forced me to be clear about what had actually happened. Who was there. What kind of meeting it was. Whether anything actionable occurred.
 
-I'm not suggesting you turn your journal into JSON. The human experience of writing and reviewing notes matters. There's a reason people love Obsidian's graph view, or Notion's gallery layouts, or even just the satisfaction of a well-organized folder tree. These are features for humans, and they should stay.
+Writing for machines made me write better for my future self.
 
-But underneath the human-friendly surface, there needs to be a machine-friendly skeleton. Structured metadata in the frontmatter. Consistent naming patterns. Explicit references instead of ambiguous shorthand. Templates that generate both at once so you don't have to think about it.
+Your future self is more like an LLM than you think. Limited context. No memory of your emotional state. Just text on a page.
 
-The people who figure this out are going to have a compounding advantage. The ones who build personal knowledge systems that serve both audiences without degrading the experience for either. Every note they write gets better for them and simultaneously makes their AI agents more capable. Every new tool they try can immediately access their full context. They stop re-explaining themselves to every new chat window, every new model, every new agent.
+Optimizing for machines is optimizing for your own forgetfulness.
 
-The people who don't will keep maintaining two separate systems, or more likely they'll keep a beautiful human system that their AI can barely read, and they'll wonder why AI still feels like a party trick.
+There's a broader pattern here.
 
+The internet is forking. There's the human web — layouts, fonts, visual hierarchy. And there's the agent web — APIs, structured data, schemas.
 
-We're in a weird transitional moment. The tools haven't caught up to this problem yet. Obsidian doesn't have a "make this agent-readable" button. Notion's AI features are bolted on, not foundational. Most knowledge management apps are still designed as if the only reader is a human with a mouse.
+Our notes are forking too.
 
-That will change. But you don't have to wait for the tools. You can start now by changing how you write. Add the frontmatter. Be explicit about who and what. Use consistent formats. Think of every note as something that two very different readers will need to understand.
+Most people assume the solution is two systems: one beautiful vault for humans, one structured backend for agents.
 
-It's a small change in habit that unlocks an entirely different relationship with AI. And it turns out, it makes you a clearer thinker too.
+I think that's wrong.
+
+The better approach is to treat your notes like an API with a frontend.
+
+The surface can stay human. Shorthand, visual structure, whatever helps you think.
+
+But underneath, the skeleton must be explicit.
+
+Frontmatter matters.
+Naming conventions matter.
+Entity references matter.
+Templates should generate structure automatically.
+
+None of this is technically difficult.
+
+The hard part is changing the question.
+
+It used to be: Can I find this later?
+
+Now it's: Can I find this later, and can a machine find it too, and will it understand what it found?
+
+That extra clause forces clarity.
+
+Toby Lütke once described corporate politics as bad context engineering — people unclear about what they meant or decided.
+
+There's a personal version of this.
+
+Ambiguous notes. Forgotten decisions. Tasks that vanish.
+
+We rely on memory to fill gaps. Machines don't. They take us literally.
+
+And that's the useful constraint.
+
+The people who figure this out will have leverage. Every note they write will improve both their thinking and their agents' capabilities. New tools won't require re-explaining context. The system compounds.
+
+The others will keep a beautiful human system that AI can barely read, and conclude AI is still a party trick.
+
+We're early. The tools haven't caught up.
+
+But you don't have to wait.
+
+Write as if two very different readers will encounter every note.
+
+It turns out that doing so makes you a clearer thinker — even if the machine never reads it.
