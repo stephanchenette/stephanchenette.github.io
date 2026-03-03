@@ -75,7 +75,7 @@ Optimizing for machines is optimizing for your own forgetfulness.
 
 There's a broader pattern here.
 
-The internet is forking. There's the human web — layouts, fonts, visual hierarchy. And there's the agent web — APIs, structured data, schemas.
+The internet is forking. There's the human web: layouts, fonts, visual hierarchy. And there's the agent web: APIs, structured data, schemas.
 
 Our notes are forking too.
 
@@ -104,7 +104,7 @@ Now it's: Can I find this later, and can a machine find it too, and will it unde
 
 That extra clause forces clarity.
 
-Toby Lütke once described corporate politics as bad context engineering — people unclear about what they meant or decided.
+Toby Lütke once described corporate politics as bad context engineering. People unclear about what they meant or decided.
 
 There's a personal version of this.
 
@@ -124,4 +124,4 @@ But you don't have to wait.
 
 Write as if two very different readers will encounter every note.
 
-It turns out that doing so makes you a clearer thinker — even if the machine never reads it.
+It turns out that doing so makes you a clearer thinker, even if the machine never reads it.
