@@ -3,7 +3,9 @@ layout: default
 title: Write Like a Machine Can Read
 permalink: /write-like-a-machine-can-read/
 essay: true
----# Write Like a Machine Can Read
+---
+
+# Write Like a Machine Can Read
 
 *March 2026*
 
