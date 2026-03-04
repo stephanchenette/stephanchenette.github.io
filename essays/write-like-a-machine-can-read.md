@@ -5,8 +5,6 @@ permalink: /write-for-machines-first-and-humans-second/
 essay: true
 ---
 
-# Write for Machines First, and Humans Second
-
 *March 2026*
 
 For years, I wrote as if I were the only audience.
@@ -24,10 +22,6 @@ That was fine when I was the only reader.
 I'm not anymore.
 
 I now run a fleet of AI agents on my machines. They read my meeting notes, extract action items, enrich context, draft messages in my voice. They use my notes as both input and context, and they write back into those same notes.
-
-Every time they try to parse my vault, they struggle. Not because they're dumb. Because my notes were written for someone who already has the context. Me.
-
-An agent can't fill in gaps from your memory. It can't piece together what you meant from shorthand and first names and arrows. LLMs don't guess well. They need structure. They need explicit context. They need to know which John, what meeting type, what initiative, what the actual action item is.
 
 This changes the game completely.
 
