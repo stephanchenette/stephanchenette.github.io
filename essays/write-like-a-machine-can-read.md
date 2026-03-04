@@ -7,7 +7,7 @@ essay: true
 
 *March 2026*
 
-For years, I wrote as if I were the only audience.
+For years, everything in my personal knowledge system -- every note, every clipping, every saved link -- was written for one reader. Me.
 
 Every note I took, every clipping I saved, every piece of information I stored in Obsidian was for my reference. It was there to help me be more efficient with what I had time to do each day, each week, each quarter, across both personal and professional projects.
 
