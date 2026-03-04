@@ -9,5 +9,5 @@ Founder. Builder. Systems thinker.
 
 ## Essays
 
-- [Write Like a Machine Can Read](/write-like-a-machine-can-read/)
+- [Write for Machines First, and Humans Second](/write-for-machines-first-and-humans-second/)
 - [Why Multi-Agent Systems Change Control](/why-multi-agent-systems-change-control/)
