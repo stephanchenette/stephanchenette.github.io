@@ -27,11 +27,7 @@ This changes the game completely.
 
 The shift is this: anything you take notes on that an agent hasn't already captured for you is going to be consumed by agents. Your notes are no longer just for you. They are input to systems that will help you across every personal and professional endeavor you have. If those notes aren't structured for a machine to parse, you've created a dead end.
 
-Humans glance. Machines parse.
-
-When I write notes, I use shorthand. "John, follow up." Bold text. Color. Spatial layout. A week later I can glance at the page and reconstruct the meeting. My brain fills in the gaps.
-
-An LLM can't do that. It needs to know which John. It needs dates in a standard format. It needs action items in a consistent pattern.
+After a meeting, I write something like "Talked to James, he's onboard, just needs to run it by legal." I know what "it" is. I know which James. I know why legal matters. To an agent, that sentence contains almost no actionable information.
 
 The difference isn't cosmetic. It's architectural.
 
