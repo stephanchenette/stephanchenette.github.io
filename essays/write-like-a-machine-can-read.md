@@ -5,6 +5,8 @@ permalink: /write-for-machines-first-and-humans-second/
 essay: true
 ---
 
+# Write for Machines First, and Humans Second
+
 *March 2026*
 
 For years, everything in my personal knowledge system -- every note, every clipping, every saved link -- was written for one reader. Me. It was all there to help me be more efficient with what I had time to do each day, each week, each quarter, across both personal and professional projects.
