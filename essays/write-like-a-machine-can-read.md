@@ -1,69 +1,57 @@
 ---
 layout: default
-title: Write Like a Machine Can Read
-permalink: /write-like-a-machine-can-read/
+title: Write for Machines First, and Humans Second
+permalink: /write-for-machines-first-and-humans-second/
 essay: true
 ---
 
-# Write Like a Machine Can Read
+# Write for Machines First, and Humans Second
 
 *March 2026*
 
-For the last few years, I've been obsessively reorganizing my notes.
+For years, I wrote as if I were the only audience.
 
-I moved from scattered Apple Notes to Notion to Obsidian. I studied other people's systems. I built dashboards, templates, hierarchies. I tuned it until it felt right.
+Every note I took, every clipping I saved, every piece of information I stored in Obsidian was for my reference. It was there to help me be more efficient with what I had time to do each day, each week, each quarter, across both personal and professional projects.
 
-And it was right.
+I moved from scattered Apple Notes to Notion to Obsidian. I studied other people's systems. I built dashboards, templates, hierarchies. I tagged things. I used backlinks. I tuned it until it felt right.
 
-For me.
+And it worked. For me.
 
-Then I got a second reader.
+But here's the thing I've realized after five years of accumulating notes: I rarely go back. Despite the careful tagging and linking, I'm almost always focused on whatever I'm working on right now. The notes from last quarter sit untouched. The backlinks are there, but I'm not following them.
 
-I now run a constellation of AI agents that help manage my life and work. They read my meeting notes, extract action items, enrich context, draft messages. They're useful.
+That was fine when I was the only reader.
 
-But every time they search my vault, they struggle.
+I'm not anymore.
 
-Not because they're dumb.
+I now run a fleet of AI agents on my machines. They read my meeting notes, extract action items, enrich context, draft messages in my voice. They use my notes as both input and context, and they write back into those same notes.
 
-Because my notes weren't written for them.
+Every time they try to parse my vault, they struggle. Not because they're dumb. Because my notes were written for someone who already has the context. Me.
 
-For a decade, we've built personal knowledge systems optimized for one audience: ourselves. Now we have a second audience that reads very differently. And we're trying to serve both with the same files.
+An agent can't fill in gaps from your memory. It can't piece together what you meant from shorthand and first names and arrows. LLMs don't guess well. They need structure. They need explicit context. They need to know which John, what meeting type, what initiative, what the actual action item is.
+
+This changes the game completely.
+
+The shift is this: anything you take notes on that an agent hasn't already captured for you is going to be consumed by agents. Your notes are no longer just for you. They are input to systems that will help you across every personal and professional endeavor you have. If those notes aren't structured for a machine to parse, you've created a dead end.
 
 Humans glance. Machines parse.
 
-When I write notes, I use shorthand.
-"John → follow up."
-Bold text. Color. Spatial layout.
+When I write notes, I use shorthand. "John, follow up." Bold text. Color. Spatial layout. A week later I can glance at the page and reconstruct the meeting. My brain fills in the gaps.
 
-A week later I can glance at the page and reconstruct the meeting. My brain fills in the gaps.
-
-An LLM can't fill in gaps. It needs explicit structure.
-
-It needs to know which John.
-It needs dates in a standard format.
-It needs action items in a consistent pattern.
+An LLM can't do that. It needs to know which John. It needs dates in a standard format. It needs action items in a consistent pattern.
 
 The difference isn't cosmetic. It's architectural.
 
-This became obvious when I added a file watcher. Every time I saved a meeting note, an agent would read it and add tasks to my daily page.
+This became obvious when I added a file watcher to my vault. Every time I saved a meeting note, an agent would read it and add tasks to my daily page.
 
 In theory, elegant.
 
 In practice, messy.
 
-It misclassified things. It duplicated tasks. It guessed wrong.
-
-The AI wasn't failing.
-
-My notes were.
-
-They assumed context. The agent had none.
+It misclassified things. It duplicated tasks. It guessed wrong. The AI wasn't failing. My notes were. They assumed context. The agent had none.
 
 So I added frontmatter. Structured metadata: meeting type, attendees, company, initiative. Ugly, but precise.
 
-The agents became dramatically more reliable.
-
-Something else happened too. My notes improved.
+The agents became dramatically more reliable. And something else happened. My notes improved.
 
 Filling out structured fields forced me to be clear about what had actually happened. Who was there. What kind of meeting it was. Whether anything actionable occurred.
 
@@ -73,26 +61,25 @@ Your future self is more like an LLM than you think. Limited context. No memory 
 
 Optimizing for machines is optimizing for your own forgetfulness.
 
-There's a broader pattern here.
+There's a broader architecture emerging here.
 
-The internet is forking. There's the human web: layouts, fonts, visual hierarchy. And there's the agent web: APIs, structured data, schemas.
+Think of Obsidian or Notion as your human presentation layer. It's where you browse, think, and organize visually. But agents need a different layer. They might use your notes as an intermediary, sitting between your human-readable vault and their own more efficient structures: a knowledge graph, a SQL database with embeddings, a vector store.
 
-Our notes are forking too.
+This intermediary layer is where the real leverage lives. The agent reads your structured notes, indexes them into something it can reason over, and serves answers back to you on demand. Your vault becomes an interface, not a destination.
 
-Most people assume the solution is two systems: one beautiful vault for humans, one structured backend for agents.
+And this solves a problem we've been living with for years. Every organization has a massive wiki or Confluence that is completely out of date. Nobody maintains it. Nobody trusts it. It rots.
+
+That doesn't have to happen anymore. One of an agent's responsibilities can be to manage content as new information comes in. Updating what's relevant. Flagging what's stale. Archiving what's dead. The maintenance problem that killed every corporate knowledge base is exactly the kind of tedious, continuous work that agents are built for.
+
+But all of this only works if the notes are structured in the first place.
+
+Most people assume the solution is two separate systems: one beautiful vault for humans, one structured backend for agents.
 
 I think that's wrong.
 
-The better approach is to treat your notes like an API with a frontend.
+The better approach is to treat your notes like an API with a frontend. The surface can stay human. Shorthand, visual structure, whatever helps you think. But underneath, the skeleton must be explicit.
 
-The surface can stay human. Shorthand, visual structure, whatever helps you think.
-
-But underneath, the skeleton must be explicit.
-
-Frontmatter matters.
-Naming conventions matter.
-Entity references matter.
-Templates should generate structure automatically.
+Frontmatter matters. Naming conventions matter. Entity references matter. Templates should generate structure automatically.
 
 None of this is technically difficult.
 
@@ -104,13 +91,11 @@ Now it's: Can I find this later, and can a machine find it too, and will it unde
 
 That extra clause forces clarity.
 
+We do a lot of context switching. We have less sustained focus than we'd like. We need answers immediately. Agents can give us those answers, but only if we've given them structured information to work with. An agent that can't parse your notes is just a chatbot with no memory.
+
 Toby Lütke once described corporate politics as bad context engineering. People unclear about what they meant or decided.
 
-There's a personal version of this.
-
-Ambiguous notes. Forgotten decisions. Tasks that vanish.
-
-We rely on memory to fill gaps. Machines don't. They take us literally.
+There's a personal version of this. Ambiguous notes. Forgotten decisions. Tasks that vanish. We rely on memory to fill gaps. Machines don't. They take us literally.
 
 And that's the useful constraint.
 
@@ -122,6 +107,4 @@ We're early. The tools haven't caught up.
 
 But you don't have to wait.
 
-Write as if two very different readers will encounter every note.
-
-It turns out that doing so makes you a clearer thinker, even if the machine never reads it.
+Write as if two very different readers will encounter every note. Because now they do.
