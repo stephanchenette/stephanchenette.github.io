@@ -7,9 +7,7 @@ essay: true
 
 *March 2026*
 
-For years, everything in my personal knowledge system -- every note, every clipping, every saved link -- was written for one reader. Me.
-
-Every note I took, every clipping I saved, every piece of information I stored in Obsidian was for my reference. It was there to help me be more efficient with what I had time to do each day, each week, each quarter, across both personal and professional projects.
+For years, everything in my personal knowledge system -- every note, every clipping, every saved link -- was written for one reader. Me. It was all there to help me be more efficient with what I had time to do each day, each week, each quarter, across both personal and professional projects.
 
 I moved from scattered Apple Notes to Notion to Obsidian. I studied other people's systems. I built dashboards, templates, hierarchies. I tagged things. I used backlinks. I tuned it until it felt right.
 
@@ -17,9 +15,7 @@ And it worked. For me.
 
 But here's the thing I've realized after five years of accumulating notes: I rarely go back. Despite the careful tagging and linking, I'm almost always focused on whatever I'm working on right now. The notes from last quarter sit untouched. The backlinks are there, but I'm not following them.
 
-That was fine when I was the only reader.
-
-I'm not anymore.
+That's fine. But the workflow has shifted — I'm no longer the only reader.
 
 I now run a fleet of AI agents on my machines. They read my meeting notes, extract action items, enrich context, draft messages in my voice. They use my notes as both input and context, and they write back into those same notes.
 
@@ -73,13 +69,13 @@ Frontmatter matters. Naming conventions matter. Entity references matter. Templa
 
 None of this is technically difficult.
 
-The hard part is changing the question.
+The question has simply changed.
 
 It used to be: Can I find this later?
 
 Now it's: Can I find this later, and can a machine find it too, and will it understand what it found?
 
-That extra clause forces clarity.
+The hard part is the habit. Adding frontmatter before you start writing. Spelling out full names instead of initials. Tagging the meeting type when you'd rather just close your laptop.
 
 We do a lot of context switching. We have less sustained focus than we'd like. We need answers immediately. Agents can give us those answers, but only if we've given them structured information to work with. An agent that can't parse your notes is just a chatbot with no memory.
 
