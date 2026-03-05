@@ -71,11 +71,9 @@ Frontmatter matters. Naming conventions matter. Entity references matter. Templa
 
 None of this is technically difficult.
 
-The question has simply changed.
+We used to take notes to offload our brains. Capture it, move on, hope it's there if we ever need it.
 
-It used to be: Can I find this later?
-
-Now it's: Can I find this later, and can a machine find it too, and will it understand what it found?
+Now the question is different: can a machine find this, and will it understand what it found?
 
 The hard part is the habit. Adding frontmatter before you start writing. Spelling out full names instead of initials. Tagging the meeting type when you'd rather just close your laptop.
 
