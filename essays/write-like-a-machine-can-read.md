@@ -25,7 +25,7 @@ This changes the game completely.
 
 The shift is this: anything you take notes on that an agent hasn't already captured for you is going to be consumed by agents. Your notes are no longer just for you. They are input to systems that will help you across every personal and professional endeavor you have. If those notes aren't structured for a machine to parse, you've created a dead end.
 
-After a meeting, I write something like "Talked to James, he's onboard, just needs to run it by legal." I know what "it" is. I know which James. I know why legal matters. To an agent, that sentence contains almost no actionable information.
+Take a real example. Previously, after a meeting, I'd occasionally write something like "Talked to James, he's onboard, just needs to run it by legal." I know what "it" is. I know which James. I know why legal matters. To an agent, that sentence contains almost no actionable information.
 
 The difference isn't cosmetic. It's architectural.
 
@@ -37,7 +37,7 @@ In practice, messy.
 
 It misclassified things. It duplicated tasks. It guessed wrong. The AI wasn't failing. My notes were. They assumed context. The agent had none.
 
-So I added frontmatter. Structured metadata: meeting type, attendees, company, initiative. Ugly, but precise.
+So I became disciplined to always add frontmatter. Structured metadata: meeting type, attendees, company, initiative. Ugly, but precise.
 
 The agents became dramatically more reliable. And something else happened. My notes improved.
 
